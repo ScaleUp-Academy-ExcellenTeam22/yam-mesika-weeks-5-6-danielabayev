@@ -1,3 +1,5 @@
+# get the prices of the ingredients ,the amount need and the optional - which is the ingredients we don't need
+# and calculate the price.
 def get_recipe_price(prices, optionals=[], **ingredients):
     total_price = 0
     for ingredient in ingredients:
