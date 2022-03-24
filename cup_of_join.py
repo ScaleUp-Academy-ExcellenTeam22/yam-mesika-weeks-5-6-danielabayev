@@ -1,4 +1,10 @@
-def join(*args, sep='-'):
+def join(*args: list[list[any]], sep: chr = '-') -> list[str]:
+    """
+    This function receive list of lists and make it one list separate by the sep char.
+    :param args: the list of lists.
+    :param sep: the char separate between the items, the default sign is '-'.
+    :return: the new list.
+    """
     if not args:
         return None
     new_list = []
@@ -10,7 +16,8 @@ def join(*args, sep='-'):
     return new_list
 
 
-print(join([1, 2], [8], [9, 5, 6], sep='@'))
-print(join([1, 2], [8], [9, 5, 6]))
-print(join([1]))
-print(join())
+if __name__ == "__main__":
+    print(join([1, 2], [8], [9, 5, 6], sep='@'))
+    print(join([1, 2], [8], [9, 5, 6]))
+    print(join([1]))
+    print(join())
