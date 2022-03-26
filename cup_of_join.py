@@ -3,7 +3,7 @@ from itertools import chain
 
 def join(*args: list[list[any]], sep: chr = '-') -> list[str]:
     """
-    This function receive list of lists and make it one list separate by the sep char.
+    This function receive list of lists and make it one list separate by the separator char.
     :param args: The list of lists.
     :param sep: The char separate between the items, the default sign is '-'.
     :return: The new list.
