@@ -11,7 +11,6 @@ def print_date() -> None:
     the random date.
     Then check if the new date is in monday, print the date
     and if the date is monday say "i don't have vinaigrette".
-    :return: don't return anything.
     """
     start_date = input(INPUT_DATE_MESSAGE)
     end_date = input(INPUT_DATE_MESSAGE)
