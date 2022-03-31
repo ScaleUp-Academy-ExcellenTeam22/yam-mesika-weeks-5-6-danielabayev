@@ -1,6 +1,12 @@
-# get the prices of the ingredients ,the amount need and the optional - which is the ingredients we don't need
-# and calculate the price.
 def get_recipe_price(prices: map, optionals: list = [], **ingredients: map) -> int:
+    """
+    This function get the ingredients and their prices, the ingredients we dont need and the amount from every
+    ingredient and return the price the cake will cost to us.
+    :param prices: A dictionary of ingredients needed to make the cake.
+    :param optionals: A list of ingredients that we will ignore in the price calculation.
+    :param ingredients: The amount of ingredient (in grams) from which we want to buy for the cake.
+    :return: The price we need to pay on all the ingredients.
+    """
     total_price = 0
     for ingredient in ingredients:
         ingredient_amount = int(ingredients[ingredient]) / 100
